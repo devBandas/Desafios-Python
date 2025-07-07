@@ -38,4 +38,4 @@ while opcao != 3 :
     if opcao == 1 :
             tarefa = input("Digite a descrição da nova tarefa: ")
             lista.append(tarefa)
-            print("Tarefa", tarefa, "adicionada com sucesso!")
+        
