@@ -11,10 +11,15 @@ print("--------------------------------")
 opcao = int(input("Sua escolha: "))
 if opcao == 2 :
     if lista == [] :
+     print("--------------------------------")
      print("Não tem nada na lista")
-else :
-    print(lista)
-if opcao == 1 :
+     print("--------------------------------")
+    else :
+        numero_da_tarefa = 1
+        for tarefa in lista :
+            print(f"{numero_da_tarefa}. {tarefa}")
+            numero_da_tarefa += 1
+elif opcao == 1 :
     tarefa = input("Digite a descrição da nova tarefa: ")
     lista.append(tarefa)
     print("Tarefa", tarefa, "adicionada com sucesso!")
@@ -30,12 +35,15 @@ while opcao != 3 :
     opcao = int(input("Sua escolha: "))
     if opcao == 2 :
             if lista == [] :
+                print("--------------------------------")
                 print("Não tem nada na lista")
+                print("--------------------------------")
             else :
-                print(lista)
-                
-
-    if opcao == 1 :
+                numero_da_tarefa = 1
+                for tarefa in lista :
+                    print(f"{numero_da_tarefa}. {tarefa}")
+                    numero_da_tarefa += 1
+    elif opcao == 1 :
             tarefa = input("Digite a descrição da nova tarefa: ")
             lista.append(tarefa)
             print("Tarefa", tarefa, "adicionada com sucesso!")
