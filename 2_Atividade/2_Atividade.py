@@ -1,0 +1,41 @@
+lista = []
+
+print("================================")
+print("      MINHA LISTA DE TAREFAS    ")
+print("================================")
+print("Escolha uma opção: ")
+print("1. Adicionar nova tarefa")
+print("2. Ver todas as tarefas")
+print("3. Sair")
+print("--------------------------------")
+opcao = int(input("Sua escolha: "))
+if opcao == 2 :
+    if lista == [] :
+     print("Não tem nada na lista")
+else :
+    print(lista)
+if opcao == 1 :
+    tarefa = input("Digite a descrição da nova tarefa: ")
+    lista.append(tarefa)
+    print("Tarefa", tarefa, "adicionada com sucesso!")
+while opcao != 3 :
+    print("================================")
+    print("      MINHA LISTA DE TAREFAS    ")
+    print("================================")
+    print("Escolha uma opção: ")
+    print("1. Adicionar nova tarefa")
+    print("2. Ver todas as tarefas")
+    print("3. Sair")
+    print("--------------------------------")
+    opcao = int(input("Sua escolha: "))
+    if opcao == 2 :
+            if lista == [] :
+                print("Não tem nada na lista")
+            else :
+                print(lista)
+                
+
+    if opcao == 1 :
+            tarefa = input("Digite a descrição da nova tarefa: ")
+            lista.append(tarefa)
+            print("Tarefa", tarefa, "adicionada com sucesso!")
